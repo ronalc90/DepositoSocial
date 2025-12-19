@@ -1,0 +1,170 @@
+.confirmacion-pedido {
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding: 3rem 0;
+}
+
+.confirmacion-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.success-icon {
+  margin: 0 auto 2rem;
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.confirmacion-card h1 {
+  color: #FFC107;
+  font-size: 2rem;
+  margin: 0 0 2rem;
+  font-weight: 700;
+}
+
+.pedido-info {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.pedido-numero {
+  font-size: 1.25rem;
+  color: #495057;
+  margin: 0 0 0.75rem;
+}
+
+.pedido-numero strong {
+  color: #FFC107;
+  font-size: 1.5rem;
+}
+
+.pedido-mensaje {
+  color: #6c757d;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.info-box {
+  background: linear-gradient(135deg, #FFC107 0%, #87CEEB 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.info-box h3 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+.info-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.info-box li {
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.nota-pago {
+  background: #fff3cd;
+  border: 2px solid #87CEEB;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.nota-pago p {
+  margin: 0;
+  color: #856404;
+  line-height: 1.6;
+}
+
+.nota-pago strong {
+  color: #FFC107;
+}
+
+.acciones {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 100%);
+  color: #FFC107;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(255, 200, 0, 0.4);
+}
+
+.btn-secondary {
+  background: white;
+  color: #FFC107;
+  border: 2px solid #FFC107;
+}
+
+.btn-secondary:hover {
+  background: #FFC107;
+  color: white;
+}
+
+.redirect-mensaje {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin: 1.5rem 0 0;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .confirmacion-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .confirmacion-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .acciones {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+}
