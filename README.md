@@ -64,6 +64,8 @@ python manage.py runserver
 
 El backend estará disponible en: `http://localhost:8000`
 
+> **Producción:** define `DJANGO_DEBUG=false`, `DJANGO_SECRET_KEY` (una clave larga y aleatoria, por ejemplo `python -c "import secrets; print(secrets.token_urlsafe(50))"`) y `DJANGO_ALLOWED_HOSTS` (dominios separados por comas). Cambia también la contraseña del superusuario `admin`.
+
 ### 3. Configurar Frontend
 
 ```bash
